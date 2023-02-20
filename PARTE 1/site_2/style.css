@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-image:linear-gradient(white, black);
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background: #bbbbbb;
+    padding: 20px 0;
+}
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top:110px;
+    right:0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+.produtos li{
+    display:inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    margin: 0 1.5%;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+.produtos li:hover{
+    border-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+}
+.produtos li:hover h2{
+    font-size: 32px;
+}
+.produtos li:active{
+    border-color: blue;
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight:bold;
+}
+.produtos-descricao{
+    font-size: 18px;
+}
+.produtos-precos{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer{
+    background-color:black;
+    text-align: center;
+    background-image:url("assests/bg.jpg");
+    padding: 40px;
+}
+.copy{
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+}
+main{
+    width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+}form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.input-padrao{
+    display: block;
+    padding: 10px 25px;
+    width: 50%;
+    margin: 20px 0;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 20px;
+    background-color: aqua;
+    color:black;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;       
+}
+.enviar:hover{
+    background-color: red;
+    color:black;
+    transform: scale(1.2);
+}
+table{
+    margin: 20px 40px; 
+}
+thead{
+    background-color: aqua;
+    color:black;
+    font-weight: bold;
+}
+td, th{
+    padding: 10px 25px;
+    border: 1px solid black;
+}
+/*css da página inicial*/
+.banner {
+    width:100%;
+}
+.titulo-principal{
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0 1em;
+    clear: left;
+}
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.utensilios{
+    width:120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.mapa{
+    padding: 3em 0;
+}
+.mapa p{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.beneficios{
+    padding: 3em 0;
+    
+}
+.conteudo-beneficios{
+    width: 940px;
+    margin: 0 0 1em;
+}
+.imagem-beneficios{
+    width:50%;  
+    margin-bottom: 2em; 
+}
+.lista-beneficios{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 2em;
+    padding: 2em;
+}
+.itens{
+    line-height: 1.5;
+}
+.itens::before{
+    content: "✠ ";
+}
+.itens:first-child{
+    font-weight: bold;
+}
+.vidio{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
